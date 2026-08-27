@@ -5,7 +5,9 @@
         "device": "*",
         "arcade-mini-menu": "github:riknoll/arcade-mini-menu#v0.1.0",
         "multiplayer": "*",
-        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0"
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
+        "pxt-countup": "github:shakao/pxt-countup#v0.0.2",
+        "Sprite Grid": "github:microsoft/arcade-grid#v1.3.0"
     },
     "files": [
         "main.blocks",
