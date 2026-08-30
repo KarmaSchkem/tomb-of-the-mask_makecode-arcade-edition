@@ -111,12 +111,13 @@ function MainMenu () {
         666666666666666666666666
         666666666666666666666666
         `)
+    blockSettings.writeNumber("Level Number", 1)
     myMenu.setPosition(80, 60)
     miniMenu.onButtonPressed(myMenu, miniMenu.Button.A, function (selection, selectedIndex) {
         miniMenu.close(myMenu)
         if (selection == "Game") {
             LevelRequirement()
-            Level(blockSettings.readNumber("Level Number"))
+            Level()
         } else if (false) {
         	
         } else if (false) {
@@ -150,7 +151,7 @@ function LevelRequirement () {
         `, SpriteKind.Player)
     scene.cameraFollowSprite(mySprite)
 }
-function Level (_1: number) {
+function Level () {
     tiles.setCurrentTilemap(tilemap`niveau1`)
     tiles.placeOnTile(mySprite, tiles.getTileLocation(11, 28))
     controller.moveSprite(mySprite, 10000, 10000)
